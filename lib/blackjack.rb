@@ -93,7 +93,7 @@ def runner
   until num >= 21
       total = hit?(num)
       if total == num
-        puts "Thanks for staying. Your number is #{total}. Exiting now!"
+        puts "Thanks for staying. Your total is #{total}. Exiting now!"
         return
       end
       num = total
