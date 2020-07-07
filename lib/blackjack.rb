@@ -89,6 +89,7 @@ def runner
   
   welcome
   num = initial_round
+<<<<<<< HEAD
 
   until num >= 21
       total = hit?(num)
@@ -101,3 +102,19 @@ def runner
   end
   end_game(num)
 end
+=======
+  if num < 21
+    total = hit?(num)
+    display_card_total(total)
+  end
+
+  until num > 21
+      total = hit?(num)
+      display_card_total(total)
+  end
+  prompt_user
+  end_game(total)
+end
+
+  
+>>>>>>> 64e336900fca3966eee247e36b5b68dca485d564
